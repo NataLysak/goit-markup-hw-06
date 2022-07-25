@@ -72,14 +72,14 @@
                     </svg>
                 </button>
                 <form class="modal-form">
-                    <div class="title-modal"><strong>Залиште свої дані, ми вам передзвонимо</strong></div>
+                    <p class="title-modal"><strong>Залиште свої дані, ми вам передзвонимо</strong></p>
                 
                     <div class="form-fild">
                         <label for="user-name" class="form-lable"><span class="label-title">Ім'я</span></label>
                         <div class="modal-position-icon">
                 
-                            <input id="user-name" type="text" name="user-name" class="form-input">
-                            <svg width="12px" height="12px" class="modal-icon">
+                            <input id="user-name" type="text" name="user-name" class="form-input" required>
+                            <svg width="18" height="18" class="modal-icon">
                                 <use href="./images/icons.svg#icon-user"></use>
                             </svg>
                         </div>
@@ -89,8 +89,8 @@
                     <div class="form-fild">
                         <label for="user-tel" class="form-lable"><span class="label-title">Телефон</span></label>
                         <div class="modal-position-icon">
-                            <input id="user-tel" type="tel" name="tel" class="form-input">
-                            <svg width="13px" height="13px" class="modal-icon">
+                            <input id="user-tel" type="tel" name="tel" class="form-input" required>
+                            <svg width="18" height="18" class="modal-icon">
                                 <use href="./images/icons.svg#icon-tel"></use>
                             </svg>
                         </div>
@@ -100,8 +100,8 @@
                     <div class="form-fild">
                         <label for="user-email" class="form-lable"><span class="label-title">Пошта</span></label>
                         <div class="modal-position-icon">
-                            <input id="user-email" type="email" name="email" class="form-input">
-                            <svg width="15px" height="12px" class="modal-icon">
+                            <input id="user-email" type="email" name="email" class="form-input" required>
+                            <svg width="18" height="18" class="modal-icon">
                                 <use href="./images/icons.svg#icon-letter"></use>
                             </svg>
                         </div>
@@ -117,9 +117,9 @@
                 
                     <label class="form-checkbox">
                 
-                        <input type="checkbox" name="checkbox" class="form-accept visually-hidden">
+                        <input type="checkbox" name="checkbox" class="form-accept visually-hidden" required>
                         <span class="checkbox-icon">
-                            <svg class="icon" width="16px" height="15px">
+                            <svg class="icon" width="16" height="15">
                                 <use href="./images/icons.svg#icon-mark"></use>
                             </svg>
                         </span>
@@ -421,7 +421,7 @@
                     <li class="footer-item"><a class="contact link" href="tel:+380991111111">+38 099 111 11 11</a></li>
                 </ul> 
             </address></div>
-            <div class="footer-block">
+            <div>
             <h2 class="inviting-title">приєднуйтесь</h2>
             <ul class="inviting-ul list">
                 <li class="inviting-li"><a class="inviting-media link" href="" target="_blank" rel="noreferrer noopener" aria-label="instagram">
@@ -449,19 +449,21 @@
                     </svg>
                 </a></li>
             </ul></div>
-            <form class="footer-form">
-                <div>
+            
+                <div class="footer-form-div">
                     <p class="title-subscribe">Підпишіться на розсилку</p>
+                    <form class="">
                     <div class="footer-form-fild">
                         <label for="footer-subscribe" class="footer-form-lable"></label>
-                        <input id="footer-subscribe" type="email" name="email" class="footer-subscribe" placeholder="E-mail">
+                        <input id="footer-subscribe" type="email" name="email" class="footer-subscribe" placeholder="E-mail" required>
                         <button type="submit" class=" button button-footer"><svg class="button-footer-icon" width="24px"
                                 height="24px">
                                 <use href="./images/icons.svg#icon-icon-send"></use>
                             </svg>Підписатися</button>
+                    </form>
                     </div>
                 </div>
-            </form>
+           
         </div>
     </footer>
     <script src="./js/modal.js"></script>
